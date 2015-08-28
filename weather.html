@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/weatherstyle.css">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/weatherapp.js"></script>
+</head>
+<body>
+    <div class='container'>
+        <header id='header' class='header'>
+            <h3>Simply Weather</h3>
+        </header>
+        <section class='content'>
+        <div id='body' class='content-body'>
+         <div id='formwrap'>
+          <form>
+          <label for='search' id='form'>Enter your Zip Code:</label>
+          <input type='search' name='search' id='search'>
+          <input type='submit' value='Search' id='submitbutton'>
+          </form>
+         </div>
+          <div id='weatherData'>
+            <table id='mainWeather'>
+              <tr>
+                <td id='img'>
+                </td>
+              </tr>
+             </table>
+             <table id='supWeather'>
+              <tr>
+                <td class='main'>
+                  Current Temp
+                </td>
+                <td class='main'>
+                  Humidity
+                </td>
+                <td class='main'> 
+                  Wind Speed
+                </td>
+                <td class='main'>
+                  Description
+                </td>
+              </tr>
+              <tr>
+                <td id='temperature' class='main'>
+                </td>
+                <td id='humidity' class='main'>
+                </td>
+                <td id='windSpeed' class='main'>
+                </td>
+                <td id='description' class='main'>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+       </section>
+     <footer id='footer' class='footer'>
+     <p>Weather data provided by <a href=www.OpenWeatherMap.org>OpenWeatherMap.org</a></p>
+     </footer>
+    </div>
+</body>
+</html>
