@@ -35,6 +35,7 @@ margin-right:10%;
   padding-left : 20px;
   font-size : 3.5em;
   color : #fff;
+  font-family : Lobster;
 }
 /*Body of the page*/
 a{
@@ -51,6 +52,7 @@ a{
  font-weight : bold;
  color : #00B2EE;
  text-align : center;
+ font-family : Merriweather;
  }
 /*Form*/
 #formwrap{
@@ -62,6 +64,7 @@ form{
   font-size : 1.5em;
   font-weight :bold;
   color : #00B2EE;
+  font-family : Merriweather;
 }								
 #search{
   width : 20%;
@@ -77,17 +80,20 @@ form{
     font-weight: bold;
     border:none;
     border-radius:5px;
+    font-family : Merriweather;
 }
 /*Error Messages*/
 #lessThanFive{
   display : none;
   color : #00B2EE;
   text-align : center;
+  font-family : Merriweather;
 }
 #greaterThanFive{
   display : none;
   color : #00B2EE;
   text-align : center;
+  font-family : Merriweather;
 }
 /*Weather Tables*/
 #weatherData{
@@ -108,13 +114,15 @@ margin-left : auto;
 margin-right : auto;
 width : 50%;
 text-align : center;
+font-family : Merriweather;
 background-color : #ededed;
 padding-top : 70px;
 }
 #supWeather{
 margin-top:20px;
-padding-top : 20px;
+padding-top : 25px;
 background-color : #00B2EE;
+
 }
 #supWeather td:nth-child(odd){
 background: #f4f7f8;
@@ -124,6 +132,7 @@ background: #e8eeef;
 }
 td, th {
   text-align : center;
+  font-family : Merriweather;
 }
 
 #footer{
@@ -132,9 +141,10 @@ td, th {
   padding-bottom : 30px;
 }
 #footer p{
-  color : #ededed;
+  color : #fff;
   font-size : .75em;
   text-align : right;
   bottom : 0;
   padding-right : 15px;
+  font-family : Merriweather;
 }
