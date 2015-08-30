@@ -19,6 +19,8 @@
           <label for='search' id='form'>Enter your Zip Code:</label>
           <input type='search' name='search' id='search'>
           <input type='submit' value='Search' id='submitbutton'>
+          <br>
+          <input type='submit' value='Show Current Conditions' id='currentCondition'>
           </form>
          </div>
           <div id='lessThanFive' class='main'>
@@ -28,6 +30,9 @@
           	<p>You entered more than five numbers, please enter a valid 5 digit zip code.</p>
           </div>
           <div id='weatherData'>
+            <div>
+          	<button id='todayForecast'>Show Todays Forecast</button>
+            </div>
             <table id='mainWeather'>
               <tr>
                 <td id='img'>
@@ -46,7 +51,7 @@
                   Wind Speed
                 </td>
                 <td class='main'>
-                  Description
+                  Conditions
                 </td>
               </tr>
               <tr>
@@ -57,6 +62,38 @@
                 <td id='windSpeed' class='main'>
                 </td>
                 <td id='description' class='main'>
+                </td>
+              </tr>
+            </table>
+            <table id='forecastData'>
+              <tr>
+                <td id='foreImg'>
+                </td>
+              </tr>
+            </table>
+            <table id='currentForecast'>
+              <tr>
+                <td class='main'>
+                  Low
+                </td>
+                <td class='main'>
+                  High
+                </td>
+                <td class='main'> 
+                  Humidity
+                </td>
+                <td class='main'>
+                  Conditions
+                </td>
+              </tr>
+              <tr>
+                <td id='minTempForecast' class='main'>
+                </td>
+                <td id='maxTempForecast' class='main'>
+                </td>
+                <td id='humidityForecast' class='main'>
+                </td>
+                <td id='descriptionForecast' class='main'>
                 </td>
               </tr>
             </table>
