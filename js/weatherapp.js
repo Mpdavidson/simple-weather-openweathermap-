@@ -12,26 +12,40 @@ $(document).ready(function(){
 	    // display data
 	    if(search.length < 5){
 	    	$('#lessThanFive').fadeIn(1800, function(){});
-	    	$('#greaterThanFive').hide();
-	    	$('table').hide();
-	    	$('#fiveDay').hide();
+	        $('#greaterThanFive').hide();
+	        $('#fiveDay').hide();
+	        $('#forecastData').hide();
+	        $('#currentCondition').hide();
+	        $('#currentForecast').hide();
+	        $('#forecast').hide();
+	        $('#mainWeather').hide();
+	        $('#supWeather').hide();
+	        $('#forecast').hide();
+	        $('#todayForecast').hide();
 	    }else if(search.length > 5){
 	    	$('#greaterThanFive').fadeIn(1800, function(){});
-	    	$('#lessThanFive').hide();
-	    	$('table').hide();
-	    	$('#fiveDay').hide();
+	    	 $('#lessThanFive').hide();
+	        $('#fiveDay').hide();
+	        $('#forecastData').hide()
+	        $('#currentCondition').hide()
+	        $('#currentForecast').hide()
+	        $('#forecast').hide()
+	        $('#mainWeather').hide();
+	        $('#supWeather').hide();
+	        $('#forecast').hide();
+	        $('#todayForecast').hide();
 	    }else{
-	      $('#lessThanFive').hide();
-	      $('#greaterThanFive').hide();
-	      $('#fiveDay').hide();
-	      $('#forecastData').hide()
-	      $('#currentCondition').hide()
-	      $('#currentForecast').hide()
-	      $('#forecast').hide()
-	      $('#mainWeather').fadeIn(2400, function(){});
-	      $('#supWeather').fadeIn(3200, function(){});
-	      $('#forecast').fadeIn(2400, function(){});
-	      $('#todayForecast').fadeIn(3200, function(){});
+	        $('#lessThanFive').hide();
+	        $('#greaterThanFive').hide();
+	        $('#fiveDay').hide();
+	        $('#forecastData').hide()
+	        $('#currentCondition').hide()
+	        $('#currentForecast').hide()
+	        $('#forecast').hide()
+	        $('#mainWeather').fadeIn(2400, function(){});
+	        $('#supWeather').fadeIn(3200, function(){});
+	        $('#forecast').fadeIn(2400, function(){});
+	        $('#todayForecast').fadeIn(3200, function(){});
 	    // the AJAX part
 	    var weatherOptions = {
 	       zip : search,
@@ -113,9 +127,9 @@ $(document).ready(function(){
 	     $('#supWeather').hide();
 	     $('#todayForecast').hide();
 	     $('#forecast').fadeIn(2400, function(){});
-	     $('#currentCondition').fadeIn(2400, function(){});
-	     $('#forecastData').fadeIn(2400, function(){});
-	     $('#currentForecast').fadeIn(3200, function(){});
+	     $('#currentCondition').show();
+	     $('#forecastData').show();
+	     $('#currentForecast').show();
 	    //Ajax Part
 	    var weatherOptionsThree = {
 	       lat : latitude,
