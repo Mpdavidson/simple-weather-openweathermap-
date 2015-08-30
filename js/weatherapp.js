@@ -25,10 +25,12 @@ $(document).ready(function(){
        units : 'imperial'
     };
     function displayWeather(data) {
+      //declare icon variable for later use
       var icon = data.weather[0].icon;
+      //capitalize description for output
       var description = data.weather[0].description;
       var capitalizedDescription = description.charAt(0).toUpperCase() + description.substring(1);
-      console.log(icon);
+      //add data to tables
       $('#temperature').text(Math.round(data.main.temp) + "째 Fahrenheit");
       $('#img').html('<img src="assets/img/' + icon + '.png">');
       $('#description').text(capitalizedDescription);
