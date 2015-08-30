@@ -113,7 +113,7 @@ width : 50%;
 text-align : center;
 font-family : Merriweather;
 background-color : #ededed;
-padding-top : 70px;
+padding-top : 40px;
 }
 #supWeather, #fiveDay{
 margin-top:20px;
@@ -121,11 +121,20 @@ padding-top : 25px;
 background-color : #00B2EE;
 
 }
-#supWeather td:nth-child(odd), #fiveDay td:nth-child(odd){
+#supWeather td:nth-child(odd){
 background: #f4f7f8;
 }
-#supWeather td:nth-child(even), #fiveDay td:nth-child(even){
+#supWeather td:nth-child(even){
 background: #e8eeef;
+}
+#fiveDay{
+  margin-bottom: 60px;
+}
+.even{
+background-color : #e8eeef;
+}
+.odd{
+background-color : #f4f7f8;
 }
 td, th {
   text-align : center;
