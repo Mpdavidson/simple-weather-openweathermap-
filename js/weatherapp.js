@@ -13,13 +13,16 @@ $(document).ready(function(){
     	$('#lessThanFive').fadeIn(1800, function(){});
     	$('#greaterThanFive').hide();
     	$('table').hide();
+    	$('#fiveDay').hide();
     }else if(search.length > 5){
     	$('#greaterThanFive').fadeIn(1800, function(){});
     	$('#lessThanFive').hide();
     	$('table').hide();
+    	$('#fiveDay').hide();
     }else{
-      $('#lessThanFive').hide()
-      $('#greaterThanFive').hide()
+      $('#lessThanFive').hide();
+      $('#greaterThanFive').hide();
+      $('#fiveDay').hide();
       $('#mainWeather').fadeIn(2400, function(){});
       $('#supWeather').fadeIn(3200, function(){});
       $('#forecast').fadeIn(3200, function(){});
@@ -71,7 +74,6 @@ $(document).ready(function(){
           for(i=0;i<description.length;i++){
           capitalizedDescription.push(description[i].charAt(0).toUpperCase() + description[i].substring(1))
           }
-          console.log(capitalizedDescription);
         //Min / Max temps for forecast
           for(i=1;i<6;i++){
           $('#min' + i).text(Math.round(data.list[i].temp.min) + "째");
@@ -79,11 +81,8 @@ $(document).ready(function(){
            for(i=1;i<6;i++){
           $('#max' + i).text(Math.round(data.list[i].temp.max) + "째");
           }
-          
-    	
     	//Description of weather
     	 for(i=0;i<5;i++){
-    	 console.log(i);
     	   $('#des' + i).text(capitalizedDescription[i]);
     	   }
     	
