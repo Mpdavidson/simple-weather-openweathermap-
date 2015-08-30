@@ -26,10 +26,12 @@ $(document).ready(function(){
     };
     function displayWeather(data) {
       var icon = data.weather[0].icon;
+      var description = data.weather[0].description;
+      var capitalizedDescription = description.charAt(0).toUpperCase() + description.substring(1);
       console.log(icon);
-      $('#temperature').text(Math.round(data.main.temp) + "째 fahrenheit");
+      $('#temperature').text(Math.round(data.main.temp) + "째 Fahrenheit");
       $('#img').html('<img src="assets/img/' + icon + '.png">');
-      $('#description').text(data.weather[0].description);
+      $('#description').text(capitalizedDescription);
       $('#windSpeed').text( data.wind.speed.toFixed(1) + " mph");
       $('#humidity').text(data.main.humidity + "%");
     }
