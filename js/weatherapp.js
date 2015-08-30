@@ -54,7 +54,6 @@ $(document).ready(function(){
     //declare variable
     var count = 6;
     var weatherAPITwo = "http://api.openweathermap.org/data/2.5/forecast/daily?lat=" + latitude + "&lon=" + longitude + "&cnt=" + count;
-    console.log(weatherAPITwo);
     //display
     $('#fiveDay').fadeIn(2400, function(){});
     //Ajax Part
@@ -65,6 +64,12 @@ $(document).ready(function(){
        units : 'imperial'
     };
     function displayWeatherTwo(data){
+        //icon array
+        var icon = [];
+          for(i=1;i<data.list.length;i++){
+            icon.push(data.list[i].weather[0].icon);
+          }
+          console.log(icon);
         //capitalize description for output
         var description = [];
           for(i=1;i<data.list.length;i++){
@@ -73,6 +78,10 @@ $(document).ready(function(){
         var capitalizedDescription = [];
           for(i=0;i<description.length;i++){
           capitalizedDescription.push(description[i].charAt(0).toUpperCase() + description[i].substring(1))
+          }
+        //Icon for day
+          for(i=0;i<icon.length;i++){
+            $('#day' + i).html('<img src="assets/img/64px/' + icon[i] + '.png">');
           }
         //Min / Max temps for forecast
           for(i=1;i<6;i++){
@@ -85,8 +94,6 @@ $(document).ready(function(){
     	 for(i=0;i<5;i++){
     	   $('#des' + i).text(capitalizedDescription[i]);
     	   }
-    	
-    
     }
     $.getJSON(weatherAPITwo, weatherOptionsTwo, displayWeatherTwo);
   });//end click 2
