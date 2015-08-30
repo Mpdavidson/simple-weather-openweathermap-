@@ -4,13 +4,11 @@
     <title>Weather</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/weatherstyle.css">
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="js/weatherapp.js"></script>
 </head>
 <body>
     <div class='container'>
         <header id='header' class='header'>
-            <h3>Simply Weather</h3>
+            <h3>Simple Weather</h3>
         </header>
         <section class='content'>
         <div id='body' class='content-body'>
@@ -21,6 +19,12 @@
           <input type='submit' value='Search' id='submitbutton'>
           </form>
          </div>
+          <div id='lessThanFive' class='main'>
+          	<p>You entered less than five numbers, please enter a valid 5 digit zip code.</p>
+          </div>
+          <div id='greaterThanFive' class='main'>
+          	<p>You entered more than five numbers, please enter a valid 5 digit zip code.</p>
+          </div>
           <div id='weatherData'>
             <table id='mainWeather'>
               <tr>
@@ -61,5 +65,7 @@
      <p>Weather data provided by <a href=www.OpenWeatherMap.org>OpenWeatherMap.org</a></p>
      </footer>
     </div>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/weatherapp.js"></script>
 </body>
 </html>
