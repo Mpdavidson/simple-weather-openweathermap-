@@ -1,2 +1,2 @@
 # simple-weather-openweathermap-
-a simple website to show the current weather and data from openweathermap api
+A jquery powered weather app using Open Weather Map's api.
