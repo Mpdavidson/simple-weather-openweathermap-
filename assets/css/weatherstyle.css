@@ -69,6 +69,7 @@ form{
     cursor : pointer;
     height:30px;
     background: #00B2EE;
+    width : 100px;
     color: #fff;
     outline: none;
     display: inlineblock;
@@ -93,9 +94,6 @@ form{
     border : none;
     border-radius:5px;
     font-family : Merriweather;
-}
-#submitbutton{
-    width : 100px;
 }
 /*Error Messages*/
 #lessThanFive{
@@ -122,12 +120,12 @@ border: none;
   margin-left : auto;
   margin-right : auto;
   width : 50%
+  font-family : Merriweather;
 }
 #mainWeather{
 border : none;
 margin-left : auto;
 margin-right : auto;
-width : 50%;
 text-align : center;
 font-family : Merriweather;
 background-color : #ededed;
@@ -137,6 +135,7 @@ padding-top : 40px;
 margin-top:20px;
 padding-top : 25px;
 background-color : #00B2EE;
+width : 50%;
 
 }
 #supWeather td:nth-child(odd), #currentForecast td:nth-child(odd){
