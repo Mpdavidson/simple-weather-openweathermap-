@@ -1,5 +1,5 @@
 # simple-weather-openweathermap-
-8/30/2015 : finished
+9/05/2015 : finished
 
 A jquery powered weather app using Open Weather Map's api.
 
