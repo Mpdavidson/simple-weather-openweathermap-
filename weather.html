@@ -5,24 +5,36 @@
     <meta charset="UTF-8">
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/css/weatherstyle.css">
+    <link rel="stylesheet" href="assets/css/weatherstyle2.css">
 </head>
 <body>
-    <div class='container'>
+     <div class='wrapper'>
         <header id='header' class='header'>
-            <h3>Simple Weather</h3>
+            <div id='header-top'>
+                <h3>Simple Weather</h3>
+            </div>
+            <div class='clear'>
+            </div>
+            <div id='header-bottom'>
+               <div id='header-bottom-left'>
+                  <div id='formwrap'>
+	             <form>
+	             <label for='search' id='form'>Enter your Zip Code:</label>
+	             <input type='search' name='search' id='search'>
+	             <input type='submit' value='Search' id='submitbutton'>
+	             </form>
+                 </div>
+               </div>
+               <div id='header-bottom-right'>
+                   <div>
+                     <button id='forecast'>Show Next 5 Days</button>
+                     <button id='todayForecast'>Show Todays Forecast</button>
+                     <button id='currentCondition'>Show Current Conditions</button>
+                   </div>
+                 </div>
+               </div>
         </header>
-        <section class='content'>
         <div id='body' class='content-body'>
-         <div id='formwrap'>
-          <form>
-          <label for='search' id='form'>Enter your Zip Code:</label>
-          <input type='search' name='search' id='search'>
-          <input type='submit' value='Search' id='submitbutton'>
-          <br>
-          <input type='submit' value='Show Current Conditions' id='currentCondition'>
-          </form>
-         </div>
           <div id='lessThanFive' class='main'>
           	<p>You entered less than five numbers, please enter a valid 5 digit zip code.</p>
           </div>
@@ -30,9 +42,6 @@
           	<p>You entered more than five numbers, please enter a valid 5 digit zip code.</p>
           </div>
           <div id='weatherData'>
-            <div>
-          	<button id='todayForecast'>Show Todays Forecast</button>
-            </div>
             <table id='mainWeather'>
               <tr>
                 <td id='img'>
@@ -87,9 +96,9 @@
                 </td>
               </tr>
               <tr>
-                <td id='minTempForecast' class='main'>
+                <td id='minTempForecast' class='lo main'>
                 </td>
-                <td id='maxTempForecast' class='main'>
+                <td id='maxTempForecast' class='hi main'>
                 </td>
                 <td id='humidityForecast' class='main'>
                 </td>
@@ -97,13 +106,22 @@
                 </td>
               </tr>
             </table>
-            <div>
-          	<button id='forecast'>Show Next 5 Days</button>
-            </div>
             <table id='fiveDay'>
               <tr>
                 <th colspan=10>
                 </th>
+              </tr>
+              <tr>
+                <td id='date0' class='main odd' colspan=2>
+                </td>
+                <td id='date1' class='main even' colspan=2>
+                </td>
+                <td id='date2' class='main odd' colspan=2>
+                </td>
+                <td id='date3' class='main even' colspan=2>
+                </td>
+                <td id='date4' class='main odd' colspan=2>
+                </td>
               </tr>
               <tr>
                 <td id='day0' class='main odd' colspan=2>
@@ -118,25 +136,25 @@
                 </td>
               </tr>
               <tr>
-                <td id='min1' class='main odd'>
+                <td id='min1' class='lo main odd'>
                 </td>
-                <td id='max1' class='main odd'>
+                <td id='max1' class='hi main odd'>
                 </td>
-                <td id='min2' class='main even'>
+                <td id='min2' class='lo main even'>
                 </td>
-                <td id='max2' class='main even'>
+                <td id='max2' class='hi main even'>
                 </td>
-                <td id='min3' class='main odd'>
+                <td id='min3' class='lo main odd'>
                 </td>
-                <td id='max3' class='main odd'>
+                <td id='max3' class='hi main odd'>
                 </td>
-                <td id='min4' class='main even'>
+                <td id='min4' class='lo main even'>
                 </td>
-                <td id='max4' class='main even'>
+                <td id='max4' class='hi main even'>
                 </td>
-                <td id='min5' class='main odd'>
+                <td id='min5' class='lo main odd'>
                 </td>
-                <td id='max5' class='main odd'>
+                <td id='max5' class='hi main odd'>
                 </td>
               </tr>
               <tr>
@@ -153,12 +171,14 @@
               </tr>
             </table>
         </div>
-       </section>
-     <footer id='footer' class='footer'>
-     <p>Weather data provided by <a href=www.OpenWeatherMap.org>OpenWeatherMap.org</a></p>
-     </footer>
-    </div>
+      </div> 
+      <div class='push'>
+      </div>
+     </div>
+      <footer id='footer' class='footer'>
+        <p>Weather data provided by <a href='http://www.OpenWeatherMap.org'>OpenWeatherMap</a></p>
+      </footer>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="js/weatherapp.js"></script>
+    <script src="js/weatherapp2.js"></script>
 </body>
 </html>
